@@ -45,7 +45,12 @@ namespace MVC.Controllers
                 employeeViewModels.Add(empVM);
             }
 
-            EmployeeListViewModel empLVM = new EmployeeListViewModel() { EmployeeViewModels = employeeViewModels };
+            EmployeeListViewModel empLVM = new EmployeeListViewModel() ;
+            empLVM.EmployeeViewModels = employeeViewModels;
+            empLVM.FooterData = new FooterViewModel();
+            empLVM.FooterData.CompanyName = "Mindtree";
+            empLVM.FooterData.Year = DateTime.Now.Year.ToString();
+
             empLVM.UserName = User.Identity.Name;
             return View("Index", empLVM);
         }

@@ -40,8 +40,12 @@
         </table>
     </div>
 
+   
     <div>
         <a href="/Employee/AddNew">Add New</a>
     </div>
+
+    <p>@{ Html.RenderPartial("Footer", @Model.FooterData);}
+</p>
 </body>
 </html>
