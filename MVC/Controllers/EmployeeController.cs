@@ -46,7 +46,7 @@ namespace MVC.Controllers
             }
 
             EmployeeListViewModel empLVM = new EmployeeListViewModel() { EmployeeViewModels = employeeViewModels };
-
+            empLVM.UserName = User.Identity.Name;
             return View("Index", empLVM);
         }
 

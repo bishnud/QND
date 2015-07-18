@@ -7,6 +7,7 @@ namespace MVC.ViewModels
 {
     public class EmployeeListViewModel
     {
-        public List<EmployeeViewModel> EmployeeViewModels { get; set; }        
+        public List<EmployeeViewModel> EmployeeViewModels { get; set; }
+        public string UserName { get; set; }
     }
 }
