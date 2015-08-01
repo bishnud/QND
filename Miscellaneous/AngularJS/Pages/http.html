@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AngularJS : HTTP</title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/controllers.js"></script>
+</head>
+<body>
+    <div ng-app="customersApp" ng-controller="customersController">
+        <ul>
+            <li ng-repeat="customer in customers">
+                {{ customer.Name + ", " + customer.City + ", " + ( customer.Country | uppercase ) }}
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

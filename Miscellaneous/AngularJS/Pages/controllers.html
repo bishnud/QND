@@ -1,9 +1,35 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Angular JS : Controllers</title>    
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/controllers.js"></script>    
 </head>
 <body>
+    <!--<h4>Controllers</h4>-->
+    <!--<div ng-app="myApp" ng-controller="myCtrl">
+        <div>First Name : <input type="text" ng-model="firstName" /></div>
+        <div>Last Name : <input type="text" ng-model="lastName" /></div>
+        <div>Full Name : {{ firstName + " " + lastName }}</div>
+    </div>-->  
+
+    <!--<h4>Controller methods</h4>
+    <div ng-app="personApp" ng-controller="personCtrl">
+        <div>First Name : <input type="text" ng-model="firstName" /></div>
+        <div>Last Name : <input type="text" ng-model="lastName" /></div>
+        <div>Full Name : {{ fullName() }}</div>
+    </div>-->  
+
+
+    <h4>Controller With Objects</h4>
+    <div ng-app="personAppObjects" ng-controller="personCtrlObjects">
+        <ul>
+            <li ng-repeat="p in persons">
+                {{ p.name + ", " + p.phone}}
+            </li>
+        </ul>
+    </div>
+
 
 </body>
 </html>

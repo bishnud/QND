@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Angular JS</title>
+    <title>Angular JS : Directives</title>
     <script src="../Scripts/angular.min.js"></script>
 </head>
 <body>
@@ -52,7 +52,7 @@
     <div ng-app="" ng-init="people=[{name:'Bishnu', country:'India', phone:1234567890}, {name:'Robbie', country:'USA', phone:2626383872}, {name:'Marcia', country:'Brazil', phone:3399292900}]">
         <ul>
             <li ng-repeat="humanbeing in people track by $index">
-                {{ humanbeing.name + "  " + humanbeing.country + "  " + humanbeing.phone }}
+                {{ humanbeing.name + ",  " + humanbeing.country + ",  " + humanbeing.phone }}
             </li>
         </ul>
     </div>
