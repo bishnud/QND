@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS : Filters</title>
+    <script src="../Scripts/angular.min.js"></script>   
+    <script src="../Scripts/controllers.js"></script>
+</head>
+<body>
+    <!--<div ng-app="myApp" ng-controller="myCtrl">
+        <div>First Name : {{ firstName }} <input type="text" ng-model="firstName" /> <span ng-bind="firstName"></span></div>
+        <div>Last Name : {{ lastName }} <input type="text" ng-model="lastName" /><span ng-bind="lastName"></span></div>
+        <div>Full Name : {{ firstName + " " + lastName | uppercase }}</div>
+    </div>-->
+
+    <!--<h4>Ordering</h4>
+    <div ng-app="personAppObjects" ng-controller="personCtrlObjects">
+        <ul>
+            <li ng-repeat="p in persons | orderBy:'phone'">
+                {{ p.name + ", " + p.phone}}
+            </li>
+        </ul>
+    </div>-->
+   
+
+    <h4>Ordering</h4>
+    <div ng-app="personAppObjects" ng-controller="personCtrlObjects">
+        <p>Filter : <input type="text" ng-model="test"></p>
+        <ul>
+            <li ng-repeat="p in persons | filter:test | orderBy:'phone'">
+                {{ (p.name  | uppercase) + ", " + p.phone}}
+            </li>
+        </ul>
+    </div>
+       
+</body>
+</html>
