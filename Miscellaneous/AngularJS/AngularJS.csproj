@@ -67,6 +67,8 @@
   <ItemGroup>
     <Content Include="Pages\controllers.html" />
     <Content Include="Pages\directives.html" />
+    <Content Include="Pages\dom.html" />
+    <Content Include="Pages\events.html" />
     <Content Include="Pages\filters.html" />
     <Content Include="Pages\http.html" />
     <Content Include="Scripts\angular.min.js" />

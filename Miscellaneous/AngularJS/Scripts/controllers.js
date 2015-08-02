@@ -33,4 +33,9 @@ customerAppObject.controller('customersController', function ($scope, $http) {
 });
 
 
+var eventApp = angular.module('eventApp', []);
+eventApp.controller('eventController', function () {
+
+});
+
 

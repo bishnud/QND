@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AngularJS : DOM</title>
+    <script src="../Scripts/angular.min.js"></script>
+</head>
+<body>
+    <!--<div ng-app="">
+        <div><button ng-disabled="mySwitch">The Button</button></div>
+        <div><input type="checkbox" ng-model="mySwitch" />Button Disabled</div>
+    </div>-->
+
+    <div ng-app="" ng-init="hour=10">
+        <div ng-show="true">I'm visible</div>
+        <div ng-show="false">I'm invisible</div>
+
+        <div ng-show="hour > 12"> Hour {{ hour }}</div>
+    </div>
+
+
+
+</body>
+</html>
